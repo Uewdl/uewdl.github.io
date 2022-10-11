@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Example Site</title><link>https://example.com/posts/</link><description>Recent content in Posts on Example Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 11 Oct 2022 20:51:01 +0800</lastBuildDate><atom:link href="https://example.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>你好世界</title><link>https://example.com/posts/hello/</link><pubDate>Tue, 11 Oct 2022 20:51:01 +0800</pubDate><guid>https://example.com/posts/hello/</guid><description>&lt;h1 id="hugo-theme-mini">Hugo Theme Mini&lt;/h1>
+&lt;p>&lt;a class="link" href="https://github.com/nodejh/hugo-theme-mini/tree/master/README.md" target="_blank" rel="noopener"
+>English&lt;/a> | 简体中文&lt;/p>
+&lt;p>一个简约的响应式 Hugo 主题。&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/nodejh/hugo-theme-mini/master/images/screenshot.png"
+loading="lazy"
+alt="./images/screenshot.png"
+>&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://nodejh.github.io/hugo-theme-mini" target="_blank" rel="noopener"
+>在线 Demo&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/nodejh/hugo-theme-mini/tree/master/exampleSite" target="_blank" rel="noopener"
+>示例网站源码&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>特性：&lt;/p>
+&lt;ul>
+&lt;li>快&lt;/li>
+&lt;li>简约&lt;/li>
+&lt;li>响应式&lt;/li>
+&lt;li>归档页&lt;/li>
+&lt;li>标签页&lt;/li>
+&lt;/ul>
+&lt;h2 id="1-安装">1. 安装&lt;/h2>
+&lt;h3 id="11-使用-hugo-模块安装-推荐">1.1 使用 Hugo 模块安装 (推荐)&lt;/h3>
+&lt;blockquote>
+&lt;p>⚠️ 如果你使用的是 &lt;a class="link" href="https://gohugo.io/getting-started/installing/#binary-cross-platform" target="_blank" rel="noopener"
+>二进制包&lt;/a> 安装的 Hugo，那么你需要在电脑上安装 Go 语言。 你可以使用下面的命令检查是否安装 Go：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">$ go version
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Go 语言从 v1.14 开始支持模块. &lt;a class="link" href="https://golang.org/dl/" target="_blank" rel="noopener"
+>下载 Go&lt;/a>。&lt;/p>
+&lt;/blockquote>
+&lt;ol>
+&lt;li>
+&lt;p>在项目目录初始化 hugo 模块系统，如果之前已经执行过则忽略此步骤：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">$ hugo mod init github.com/&amp;lt;your_user&amp;gt;/&amp;lt;your_project&amp;gt;
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>在 &lt;code>config.yaml&lt;/code> 中添加主题：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="nt">theme&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>- &lt;span class="l">github.com/nodejh/hugo-theme-mini&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;/ol>
+&lt;h3 id="12-使用-git-submodule-安装">1.2 使用 Git Submodule 安装&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>在项目目录中执行下面的命令，将 hugo-theme-mini 作为 submodule：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">$ git submodule add https://github.com/nodejh/hugo-theme-mini.git themes/mini
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>在 &lt;code>config.yaml&lt;/code> 中配置主题：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="nt">theme&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">mini&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;/ol>
+&lt;p>更多信息可参考 Hugo 官方文档 &lt;a class="link" href="//gohugo.io/overview/installing/" >setup guide&lt;/a>。&lt;/p>
+&lt;h2 id="2-开始使用">2. 开始使用&lt;/h2>
+&lt;p>成功安装主题后，在生成网站前还需要进行少部分的配置。&lt;/p>
+&lt;h3 id="21-修改配置文件">2.1 修改配置文件&lt;/h3>
+&lt;p>在 &lt;a class="link" href="https://github.com/nodejh/hugo-theme-mini/tree/master/exampleSite" target="_blank" rel="noopener"
+>&lt;code>exampleSite&lt;/code>&lt;/a> 目录中有一个 &lt;a class="link" href="https://github.com/nodejh/hugo-theme-mini/blob/master/exampleSite/config.yaml" target="_blank" rel="noopener"
+>&lt;code>config.yaml&lt;/code>&lt;/a> 的配置文件，你可以将其复制到你的项目根目录中，将一些配置项修改为你的配置。这些配置都可以随意修改。&lt;/p>
+&lt;blockquote>
+&lt;p>⚠️ 你需要删除这行配置： &lt;code>themesDir: ../../&lt;/code> 。&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="22-默认语言">2.2 默认语言&lt;/h3>
+&lt;p>你可以通过 &lt;code>defaultContentLanguage&lt;/code> 配置设置默认语言：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="nt">defaultContentLanguage&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">en&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>默认是 &lt;code>en&lt;/code>。目前支持以下语言：&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>en&lt;/code>: 英语&lt;/li>
+&lt;li>&lt;code>zh&lt;/code>: 汉语&lt;/li>
+&lt;li>&lt;code>nl&lt;/code>: 荷兰语&lt;/li>
+&lt;li>&lt;code>fr&lt;/code>: 法语&lt;/li>
+&lt;li>&lt;code>es&lt;/code>: 西班牙语&lt;/li>
+&lt;/ul>
+&lt;p>更多关于多语言的信息可以参考：&lt;a class="link" href="https://gohugo.io/content-management/multilingual/" target="_blank" rel="noopener"
+>Multilingual Mode&lt;/a>。&lt;/p>
+&lt;h3 id="22-评论功能">2.2 评论功能&lt;/h3>
+&lt;p>要使用评论功能，你需要添加下面的配置：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>设置 Disqus： &lt;code>disqusShortname: your-disqus-shorname&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>启用评论：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="nt">params&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nt">enableComments&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;/ul>
+&lt;h3 id="23-google-分析">2.3 Google 分析&lt;/h3>
+&lt;p>要使用 Google 分析功能，你需要添加下面的配置：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>设置 Google Analytics ID： &lt;code>googleAnalytics: your-google-analytics-id&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>启用 Google Analytics：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="nt">params&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nt">enableGoogleAnalytics&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;/ul>
+&lt;h3 id="24-logo-和-favicon">2.4 Logo 和 favicon&lt;/h3>
+&lt;p>你可以替换网站中的 Log 和 favicon，只需要将你的图片放在网站的 &lt;code>static/images&lt;/code> 中，并分别命名为 &lt;code>avatar.png&lt;/code> 和 &lt;code>avicon.ico&lt;/code>。下面是项目目录示例：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">- content
+- static
+└── images
+├── avatar.png
+└── favicon.ico
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="25-运行网站">2.5 运行网站&lt;/h3>
+&lt;p>为了检查网站运行情况，你可以在本地启动 hugo server：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">$ hugo server
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>现在你就可以在浏览器中打开 http://localhost:1313 查看你的网站了。&lt;/p>
+&lt;h3 id="26-生产环境">2.6 生产环境&lt;/h3>
+&lt;p>如果要将网站部署到生产环境 (例如支持 Google Analytics)，你需要在 &lt;code>hugo&lt;/code> 命令前增加环境变量 &lt;code>HUGO_ENV=production&lt;/code>。例如：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="nv">HUGO_ENV&lt;/span>&lt;span class="o">=&lt;/span>production hugo
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>注意：上面的命令对 Windows 无效。如你使用 Windows，则需要使用下面的命令：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="nb">set&lt;/span> &lt;span class="nv">HUGO_ENV&lt;/span>&lt;span class="o">=&lt;/span>production
+hugo
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="3-可选配置">3. 可选配置&lt;/h2>
+&lt;h3 id="31-table-of-content">3.1 Table of Content&lt;/h3>
+&lt;p>如果要启用目录，你可以将 &lt;code>showToc&lt;/code> 设置为 &lt;code>true&lt;/code>：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="nt">showToc&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="32-在某页面禁用评论">3.2 在某页面禁用评论&lt;/h3>
+&lt;p>要在某页面禁用评论，你可以在页面的 Front Matter 中将 &lt;code>enableComments&lt;/code> 设置为 &lt;code>false&lt;/code>。&lt;/p>
+&lt;p>例如：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="nn">---&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w">&lt;/span>&lt;span class="nt">title&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Some title&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w">&lt;/span>&lt;span class="nt">enableComments&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">false&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w">&lt;/span>&lt;span class="nn">---&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="33-自定义-css-和-js">3.3 自定义 CSS 和 JS&lt;/h3>
+&lt;p>你可以将自定义 CSS 和 JS 放在 &lt;code>static&lt;/code> 中，也可以使用远程的 CSS 或 JS 文件。&lt;/p>
+&lt;p>例如：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="nt">customCSS&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>- &lt;span class="l">css/custom.css&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># local css in `static/css/custom.css`&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>- &lt;span class="l">https://example.com/custom.css&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># remote css&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w">&lt;/span>&lt;span class="nt">customJS&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>- &lt;span class="l">js/custom.js&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># local js in `static/js/custom.js`&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>- &lt;span class="l">https://example.com/custom.js&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># remote js&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="34-数学排版">3.4 数学排版&lt;/h3>
+&lt;p>该主题使用了 &lt;a class="link" href="https://katex.org/" target="_blank" rel="noopener"
+>KaTeX&lt;/a> 来支持数学符号拍版。&lt;/p>
+&lt;ul>
+&lt;li>全局支持数学排版：在项目的配置文件中将 &lt;code>math&lt;/code> 设置为 &lt;code>true&lt;/code>&lt;/li>
+&lt;li>在某页面支持数学拍版：在某页面 Front Matter 中将 &lt;code>math&lt;/code> 设置为 &lt;code>true&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h3 id="35-在首页隐藏文章摘要">3.5 在首页隐藏文章摘要&lt;/h3>
+&lt;p>如果要在首页隐藏文章摘要，你可以将 &lt;code>hiddenPostSummaryInHomePage&lt;/code> 设置为 &lt;code>true&lt;/code>，默认是 &lt;code>false&lt;/code>。&lt;/p>
+&lt;p>例如：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="nt">hiddenPostSummaryInHomePage&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="license">License&lt;/h2>
+&lt;p>&lt;a class="link" href="https://github.com/nodejh/hugo-theme-mini/blob/master/LICENSE.md" target="_blank" rel="noopener"
+>MIT&lt;/a>&lt;/p></description></item></channel></rss>
