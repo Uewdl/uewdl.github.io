@@ -4,7 +4,7 @@ languageCode = "zh-cn"
 theme = "ananke"
 resourceDir = "./resources"
 
-DefaultContentLanguage = "en"
+DefaultContentLanguage = "cn"
 SectionPagesMenu = "main"
 Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
 googleAnalytics = ""
@@ -16,10 +16,10 @@ enableRobotsTXT = true
     weight = 1
     contentDir = "content/cn"
     # languageDirection = 'rtl' for Right-To-Left languages
-  [languages.fr]
-    title = "Ananke Fr"
-    weight = 2
-    contentDir = "content/fr"
+ # [languages.fr]
+ #   title = "Ananke Fr"
+  #  weight = 2
+   # contentDir = "content/fr"
 
 [sitemap]
   changefreq = "monthly"
