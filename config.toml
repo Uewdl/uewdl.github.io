@@ -1,4 +1,4 @@
 baseURL = 'http://example.org/'
-languageCode = 'en-us'
+languageCode = 'zh-cn'
 title = 'My New Hugo Site'
-thtme = 'hugo-tania'
+thtme = 'ananke'
