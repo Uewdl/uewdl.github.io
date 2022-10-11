@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on My New Hugo Site</title><link>http://example.org/posts/</link><description>Recent content in Posts on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 11 Oct 2022 20:51:01 +0800</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>你好世界</title><link>http://example.org/posts/hello/</link><pubDate>Tue, 11 Oct 2022 20:51:01 +0800</pubDate><guid>http://example.org/posts/hello/</guid><description>Hugo Theme Mini English | 简体中文
-一个简约的响应式 Hugo 主题。
-在线 Demo 示例网站源码 特性：
-快 简约 响应式 归档页 标签页 1. 安装 1.1 使用 Hugo 模块安装 (推荐) ⚠️ 如果你使用的是 二进制包 安装的 Hugo，那么你需要在电脑上安装 Go 语言。 你可以使用下面的命令检查是否安装 Go：
-$ go version Go 语言从 v1.14 开始支持模块. 下载 Go。
-在项目目录初始化 hugo 模块系统，如果之前已经执行过则忽略此步骤：
-$ hugo mod init github.com/&amp;lt;your_user&amp;gt;/&amp;lt;your_project&amp;gt; 在 config.yaml 中添加主题：
-theme: - github.com/nodejh/hugo-theme-mini 1.2 使用 Git Submodule 安装 在项目目录中执行下面的命令，将 hugo-theme-mini 作为 submodule：</description></item></channel></rss>
